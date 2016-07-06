@@ -1,0 +1,223 @@
+
+body {
+  font-family: Deja Vu Sans, Arial, sans-serif;
+  color: #222;
+}
+div#intro, header {
+  width: 800px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+h1, h2 {
+  margin-bottom: .5rem;
+  color: #444;
+}
+h1 a {
+  text-decoration: none;
+  color: #444;
+}
+h1 a:hover {
+  background: #fff;
+  color: #777;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav > ul {
+  width: 800px;
+  background: #eee;
+  padding: .3em 1em;
+  overflow: hidden;
+  margin-left: -1em;
+  border-bottom: 1px solid #ccc;
+}
+
+nav ul li {
+  float: left;
+  font-weight: bold;
+  padding: .3em 0;
+  margin: 0;
+}
+
+nav ul li a {
+  font-weight: normal;
+  color: #222;
+}
+a {
+  color: #222;
+}
+
+a:hover {
+  color: #444;
+  background: #ccc;
+}
+
+nav ul li li {
+  margin: 0 .5em;
+}
+
+nav ul ul {
+  float: right;
+  margin: -.3em .3em;
+}
+
+div#container {
+  margin: 2rem auto;
+  height: 600px;
+  width: 800px;
+  border: 1em solid #eee;
+}
+
+div#key-list {
+  width: 200px;
+  float: right;
+  background: #eee;
+  min-height: 600px;
+}
+
+div#key-list h2 {
+  margin: 0 0 0 1rem;
+  padding: 0;
+  font-weight: 300;
+  border-bottom: 1px solid #aaa;
+}
+
+div#key-list ul {
+  padding: 0;
+  margin: .5em 0 0 1em;
+  list-style: none;
+  border-collapse: separate;
+  border-spacing: .5em .3em;       
+}
+
+div#key-list ul li {
+  line-height: 2em;
+}
+
+div#key-list ul li kbd {
+  padding: .5em .8em;
+  margin: 0 .5em 0 0; 
+  background: #ffe;
+  border: 1px solid #aa9;
+  white-space: nowrap;
+  height: 1em;
+}
+
+div.double-column {
+  margin-top: 1em;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+}
+div.double-column p {
+  margin: 0 0 1em 0;
+}
+
+p.highlight {
+  background: #fe9;
+  padding: 1em;
+}
+
+p kbd {
+  padding: .2em;
+  font-size: 1rem;
+  background: #eee;
+}
+
+ul.spike-list {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  color: #555;
+}
+
+ul.spike-list > li {
+  background: #fefefe;
+}
+
+ul.spike-list > li > span {
+  display: block;
+  padding: .5em 1em;
+  background: #f5f5f5;
+  font-weight: bold;
+  border-bottom: 2px solid #ccc
+}
+
+ul.spike-list > li > ul {
+  padding: 1em 2em;
+  list-style-type: square;
+}
+ul.spike-list > li ul ul {
+  list-style-type: none;
+}
+
+
+ul.spike-list > li > ul ul li:before {
+  list-style-type: none;
+  content: "\2610";
+  margin-right:5px;
+}
+
+
+
+
+
+
+
+
+/**
+ * SVG styling
+ **/
+svg {
+  margin: 0;
+  padding: 0;
+}
+
+svg .element {
+  fill: #def;
+  stroke-width: 2px;
+  stroke: #abc;
+}
+
+svg .container {
+  fill: rgba(225, 250, 225, .3);
+  stroke-width: 2px;
+  stroke: #aca;
+}
+
+svg .active {
+  stroke-width: 3px;
+  stroke: #fc0;
+}
+
+svg #labels .bg-element {
+  fill: #abc;
+}
+
+svg #labels .bg-container {
+  fill: #aca;
+}
+
+svg #labels g.active {
+  opacity: 0;
+}
+
+svg #labels text {
+  fill: #fff;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+div#feedbackForm {
+  width: 800px;
+  height: 900px;
+  margin: 0 auto;
+  border: 1em solid rgb(96, 125, 139);
+}
+
+
