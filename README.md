@@ -24,7 +24,7 @@ If you have any suggestions, examples or comments I'd be very
 interested in hearing them. My (probably incomplete) list of
 interactions to investigate:
 
-## Spikes:
+## TODO
 
 - [ ] Diagram traversal
       - [X] Elements
