@@ -28,19 +28,19 @@ interactions to investigate:
 
 - [ ] Diagram traversal
       - [X] Elements
-            - [X] Hierarchical
-	    - [X] By jumping
+      	- [X] Hierarchical
+	- [X] By jumping
       - [ ] Relationships
-	    - [ ] Naive (H, J, K, L)
-	    - [ ] Jumping
+	- [ ] Naive (H, J, K, L)
+	- [ ] Jumping
       - [ ] Switching between element and relation traversal
 - [ ] Diagram manipulation
       - [ ] Elements
-            - [ ] Creation
-            - [ ] Position
-	    - [ ] Size
-	    - [ ] Style (e.g. background + border)
+      	- [ ] Creation
+      	- [ ] Position
+	- [ ] Size
+	- [ ] Style (e.g. background + border)
       - [ ] Relationship routing
-            - [ ] Creation
-            - [ ] Adding control points
-	    - [ ] Change relationship type (association, generalization, etc.)
+        - [ ] Creation
+        - [ ] Adding control points
+	- [ ] Change relationship type (association, generalization, etc.)
