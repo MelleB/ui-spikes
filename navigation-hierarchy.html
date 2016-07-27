@@ -3,50 +3,39 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Diagram Editor UI Spikes &mdash; Navigation &mdash; Hierarchy</title>
-    <link type="text/css" href="https://melleb.github.io/ui-spikes/theme/css/main.css" rel="stylesheet">
-    <script>
-     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-     ga('create', 'UA-80447723-1', 'auto');
-     ga('send', 'pageview');
-    </script>
+    <link type="text/css" href="https://melleb.github.io/ui-spikes/theme/css/main-flex.css" rel="stylesheet">
+    <link type="text/css" href="https://melleb.github.io/ui-spikes/theme/css/diagram.css" rel="stylesheet">
+    <script type="text/javascript" src="https://melleb.github.io/ui-spikes/theme/js/base.js"></script>
   </head>
   <body>
     <header>
-      <h1><a href="https://melleb.github.io/ui-spikes/index.html">Diagram Editor UI Spikes</a></h1>
+      <h1><a href="https://melleb.github.io/ui-spikes/index.html">UI Spikes</a></h1>
       <nav>
 	<ul>
 	  <li>
-	    Element traversal
+	    <a href="index.html">What is this?</a>
+	  </li>
+	  <li>
+	    <span>Element traversal</span>
 	    <ul>
 	      <li><a href="navigation-hierarchy.html">Hierarchical</a></li>
 	      <li><a href="navigation-jump.html">Jumping</a></li>
+	    </ul>
+	  </li>
+	  <li>
+	    <span>Element positioning</span>
+	    <ul>
+	      <li><a href="positioning-single-axis.html">Single axis</a></li>
 	    </ul>
 	  </li>
 	</ul>
       </nav>
     </header>
 
-    <div id="intro">
-  <h2>Element navigation using diagram hierarchy</h2>
-  <p>
-    This spike was built to investigate hierarchical navigation of diagrams by extending
-    the homerow navigation commands &mdash; <kbd>h</kbd>, <kbd>j</kbd>, <kbd>k</kbd> and <kbd>l</kbd> &mdash; with two extra commands:
-    <kbd>i</kbd> for moving inside an element and <kbd>o</kbd> for changing focus to the parent container.
-  </p>
-  <p class="highlight">
-    I would really appreciate feedback on this form of navigation. Would you
-    like to use this in your daily work? Or would you go for the mouse
-    instead? You can use the form below to send me some feedback (both
-    positive and negative!).
-    Or <a href="https://github.com/MelleB/ui-spikes/issues/new">open an issue</a>.
-  </p>
-</div>
+    <div id="container">
 
-<div id="container">
+      <div id="diagram">
+  <h2>Element navigation using diagram hierarchy</h2>
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
        id="canvas" width="600" height="600">
 
@@ -77,21 +66,23 @@
     </g>
 
   </svg>
-  <div id="key-list">
-    <h2>Keys</h2>
-    <ul>
-      <li><kbd>h</kbd>Left</li>
-      <li><kbd>j</kbd>Down</li>
-      <li><kbd>k</kbd>Up</li>
-      <li><kbd>l</kbd>Right</li>
-      <li><kbd>i</kbd>In</li>
-      <li><kbd>o</kbd>Out</li>
-    </ul>
-  </div>
 </div>
 
-<div id="feedbackForm">
-  <iframe src="https://docs.google.com/forms/d/1pm_Fb3wVTPGmOtqtSlLiqt4LPPCC0DjmtZ5AhP-CWPs/viewform?embedded=true" width="800" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+<div id="shortcuts">
+  <h2>Keyboard Commands</h2>
+  <dl>
+    <dt>Navigation mode</dt>
+    <dd>
+      <dl class="short">
+    <dt><kbd>h</kbd></dt><dd>Left</dd>
+    <dt><kbd>j</kbd></dt><dd>Down</dd>
+    <dt><kbd>k</kbd></dt><dd>Up</dd>
+    <dt><kbd>l</kbd></dt><dd>Right</dd>
+    <dt><kbd>i</kbd></dt><dd>In</dd>
+    <dt><kbd>o</kbd></dt><dd>Out</dd>
+      </dl>
+    </dd>
+  </dl>
 </div>
 
 <script type="text/javascript">
@@ -228,6 +219,30 @@
  };
 
 </script>
-    
+
+<div id="info">
+  <h2>Description</h2>
+  <p>
+    This spike was built to investigate hierarchical navigation of diagrams by extending
+    the homerow navigation commands &mdash; <kbd>h</kbd>, <kbd>j</kbd>, <kbd>k</kbd> and <kbd>l</kbd> &mdash; with two extra commands:
+    <kbd>i</kbd> for moving inside an element and <kbd>o</kbd> for changing focus to the parent container.
+  </p>
+</div>
+
+      <div id="feedback">
+	<h2>Feedback wanted!</h2>
+	<p>
+	  I would really appreciate feedback on this UI spike.
+	  Would you like to use this in your daily work?
+	  Is something missing?
+	</p>
+	<p>
+	  Please feel free to
+	  <a href="https://github.com/MelleB/ui-spikes/issues/new">open an issue</a>.
+	  Thanks! <span class="heart">&#x2764;</span>
+	</p>
+      </div>
+    </div>
+
   </body>
 </html>
