@@ -1,0 +1,74 @@
+svg {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+svg .element {
+  fill: #def;
+  stroke-width: 2px;
+  stroke: #abc;
+}
+
+svg .container {
+  fill: rgba(225, 250, 225, .3);
+  stroke-width: 2px;
+  stroke: #aca;
+}
+
+svg .active {
+  stroke-width: 3px;
+  stroke: #fc0;
+}
+
+svg #labels .bg-element {
+  fill: #abc;
+}
+
+svg #labels .bg-container {
+  fill: #aca;
+}
+
+svg #labels g.active {
+  opacity: 0;
+}
+
+svg #labels text {
+  fill: #fff;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+svg #overlay line {
+  stroke: #555;
+  stroke-width: 1px;
+}
+
+svg #overlay line.pos {
+  stroke: #a00;
+  fill: rgba(0, 200, 0, .5);
+  stroke-width: 1px;
+}
+
+svg #overlay rect.placeholder {
+  fill: rgba(100, 200, 100, .5);
+  stroke: rgba(100, 200, 100, .9);
+}
+
+svg #overlay line.indicator {
+  stroke: #ccc;
+}
+
+svg text.label {
+  font-family: monospace;
+  fill: #333;
+}
+
+svg rect.label-bg {
+  fill: #eee;
+}
+
+svg text.ruler {
+  font-size: 6pt;
+  color: #ccc;
+}

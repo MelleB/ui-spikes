@@ -1,0 +1,246 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", "Deja Vu Sans", sans-serif;
+  color: #222;
+  background: #efeff0;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+header {
+  flex-grow: 1;
+  align-self: stretch;
+  background: #235;
+  overflow: hidden;
+  color: #fff;
+  width: 250px;
+  max-width: 250px;
+  min-width: 250px;
+}
+
+div#container {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div#container > div {
+  max-width: 500px;
+  min-width: 300px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+div#diagram {
+  max-width: 600px !important;
+  background: #fff;
+}
+
+h2.main,
+div#diagram h2 {
+  font-weight: bold;
+  color: #235;
+  background: #efeff0;
+}
+
+h1 {
+  margin: 0;
+  height: 3rem;
+  border-bottom: 1px solid #ccc;
+}
+
+h1 a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 1rem;
+}
+h1 a:hover {
+  background: #fff;
+  color: #777;
+}
+
+h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #555;
+  text-indent: 1em;
+  line-height: 3rem;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 1px solid #bbb;
+}
+
+div#diagram h2 {
+  font-weight: 800;
+}
+
+nav {
+  margin: 1em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+
+nav ul span {
+  font-weighnt: 300;
+  color: #ddd;
+}
+
+nav ul li {
+  padding: .3em 0;
+  margin: 0;
+  font-size: .8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+nav ul li li:before {
+  content: "- ";
+}
+
+nav ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-weight: normal;
+  text-transform: none;
+}
+
+nav > ul > li > a {
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+a {
+  color: #222;
+}
+a:hover {
+  color: #444;
+  background: #ccc;
+}
+
+div#intro {
+  border-right: 1px solid #ccc;
+}
+
+p {
+  font-family: Georgia, serif;
+  line-height: 1.5em;
+}
+
+div#feedback p,
+div#info p,
+div#intro p {
+  padding: 0 1em;
+}
+
+div#feedback {
+  background: #cfa;
+  max-width: 200px;
+  max-height: 300px;
+}
+
+div#feedback h2 {
+  color: #284;
+  border-bottom: 1px solid #284;
+}
+
+span.heart {
+  color: #080;
+  font-size: 1.2rem;
+  line-height: 1rem;
+  text-shadow: 0px 0px 1px #222;
+}
+
+div#shortcuts > dl {
+  margin: 0;
+}
+
+div#shortcuts > dl > dt {
+  background: #ddd;
+  padding: .5em 1em;
+  margin-bottom: .5em;
+}
+div#shortcuts > dl > dd {
+  margin: 0 1em 1em;
+}
+div#shortcuts dl dl {
+  margin-top: .5em;
+}
+
+div#shortcuts dl dl dt {
+  float: left;
+  width: 7rem;
+  text-align: right;
+}
+div#shortcuts dl dl dd {
+  margin-left: 8rem;
+  margin-bottom: .5em;
+}
+div#shortcuts dl dl.short dt {
+  width: 1rem;
+}
+div#shortcuts dl dl.short dd {
+  margin-left: 2rem;
+}
+
+
+kbd {
+  display: inline-block;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding: .2em .4em;
+  color: #111;
+  font-family: monospace;
+}
+
+
+ul.spike-list {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  color: #555;
+  line-height: 1.5em;
+}
+
+ul.spike-list > li > span {
+  display: block;
+  padding: .5em 1em;
+  background: #ddd;
+}
+
+ul.spike-list > li > ul {
+  padding: 1em 2em;
+  list-style-type: square;
+  margin-bottom: 1em;
+}
+ul.spike-list > li > ul > li {
+  margin-bottom: .5em;
+}
+ul.spike-list > li ul ul {
+  list-style-type: none;
+}
+
+ul.spike-list > li > ul ul li:before {
+  list-style-type: none;
+  content: "\2610";
+  color: #800;
+  margin-right:5px;
+}
+ul.spike-list > li > ul ul li.checked:before {
+  content: "\1F5F9";
+  color: #080;
+}
+

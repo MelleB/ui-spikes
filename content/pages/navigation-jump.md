@@ -1,28 +1,8 @@
 Title: Diagram Editor UI Spikes &mdash; Navigation &mdash; Jump mode
 save_as: navigation-jump.html
 
-<div id="intro">
+<div id="diagram">
   <h2>Element navigation using jumping</h2>
-  <p>
-    With this spike we investigate movement between diagram elements
-    by means of jumping. Inspiration from this method came from
-    <a href="https://github.com/winterTTr/ace-jump-mode">Ace Jump Mode</a> for Emacs.
-  </p>
-  <p>
-    If you press <kbd>z</kbd> labels will pop up in the top right
-    corner of the elements. After that you can press the key
-    associated with the element to navigate to that specific element.
-    E.g. pressing <kbd>i</kbd> will navigate to the right most element.
-  </p>
-  <p class="highlight">
-    I would really appreciate feedback on this form of navigation. Would you
-    like to use this in your daily work? Or would you go for the mouse
-    instead? You can use the form below to send me some feedback (both
-    positive and negative!).
-    Or <a href="https://github.com/MelleB/ui-spikes/issues/new">open an issue</a>.
-  </p>
-</div>
-<div id="container">
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
        xmlns:data="urn:data-namespace" id="canvas" width="600" height="600">
 
@@ -120,18 +100,28 @@ save_as: navigation-jump.html
     </g>
 
   </svg>
-  <div id="key-list">
-    <h2>Shortcut</h2>
-    <ul>
-      <li><kbd>z [a .. m]</kbd>Jump to node. First press <em>z</em>, then one of the letters <em>a</em>, <em>b</em>, <em>c</em>, ..., <em>l</em>, <em>m</em> that
-	show up in the left upper corner of the element you wish to
-	navigate to.</li>
-    </ul>
-  </div>
 </div>
-
-<div id="feedbackForm">
-  <iframe src="https://docs.google.com/forms/d/1p-pS0qObRI2aWjyRIG54fhk7zFJENEVs4P9DpMSTvno/viewform?embedded=true" width="800" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+<div id="shortcuts">
+  <h2>Keyboard Commands</h2>
+  <dl>
+    <dt>Global Mode</dt>
+    <dd>
+      <p>This would be considered the 'base' state of the eventual application.</p>
+      <dl>
+	<dt><kbd>z</kbd></dt>
+	<dd>Enter <em>Jump Mode</em></dd>
+      </dl>
+    </dd>
+    <dt>Jump Mode</dt>
+    <dd>
+      <p>In this mode, you can navigate to one of the elements in the diagram by jumping.</p>
+      <p>In the upper left corner, a label shows up. If you type in the label you navigate to the element</p>
+      <dl>
+	<dt><kbd>a</kbd> &hellip; <kbd>m</kbd></dt>
+	<dd>Jump to the element</dd>
+      </dl>
+    </dd>
+  </dl>
 </div>
 
 <script type="text/javascript">
@@ -213,3 +203,18 @@ save_as: navigation-jump.html
  }
 
 </script>
+
+<div id="info">
+  <h2>Description</h2>
+  <p>
+    With this spike we investigate movement between diagram elements
+    by means of jumping. Inspiration from this method came from
+    <a href="https://github.com/winterTTr/ace-jump-mode">Ace Jump Mode</a> for Emacs.
+  </p>
+  <p>
+    If you press <kbd>z</kbd> labels will pop up in the top right
+    corner of the elements. After that you can press the key
+    associated with the element to navigate to that specific element.
+    E.g. pressing <kbd>i</kbd> will navigate to the right most element.
+  </p>
+</div>

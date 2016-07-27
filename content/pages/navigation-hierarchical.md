@@ -1,22 +1,8 @@
 Title: Diagram Editor UI Spikes &mdash; Navigation &mdash; Hierarchy
 save_as: navigation-hierarchy.html
 
-<div id="intro">
+<div id="diagram">
   <h2>Element navigation using diagram hierarchy</h2>
-  <p>
-    This spike was built to investigate hierarchical navigation of diagrams by extending
-    the homerow navigation commands &mdash; <kbd>h</kbd>, <kbd>j</kbd>, <kbd>k</kbd> and <kbd>l</kbd> &mdash; with two extra commands:
-    <kbd>i</kbd> for moving inside an element and <kbd>o</kbd> for changing focus to the parent container.
-  </p>
-  <p class="highlight">
-    I would really appreciate feedback on this form of navigation. Would you
-    like to use this in your daily work? Or would you go for the mouse
-    instead? You can use the form below to send me some feedback (both
-    positive and negative!).
-    Or <a href="https://github.com/MelleB/ui-spikes/issues/new">open an issue</a>.
-  </p>
-</div>
-<div id="container">
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
        id="canvas" width="600" height="600">
 
@@ -47,21 +33,25 @@ save_as: navigation-hierarchy.html
     </g>
 
   </svg>
-  <div id="key-list">
-    <h2>Keys</h2>
-    <ul>
-      <li><kbd>h</kbd>Left</li>
-      <li><kbd>j</kbd>Down</li>
-      <li><kbd>k</kbd>Up</li>
-      <li><kbd>l</kbd>Right</li>
-      <li><kbd>i</kbd>In</li>
-      <li><kbd>o</kbd>Out</li>
-    </ul>
-  </div>
 </div>
-<div id="feedbackForm">
-  <iframe src="https://docs.google.com/forms/d/1pm_Fb3wVTPGmOtqtSlLiqt4LPPCC0DjmtZ5AhP-CWPs/viewform?embedded=true" width="800" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+<div id="shortcuts">
+  <h2>Keyboard Commands</h2>
+  <dl>
+    <dt>Navigation mode</dt>
+    <dd>
+      <dl class="short">
+	<dt><kbd>h</kbd></dt><dd>Left</dd>
+	<dt><kbd>j</kbd></dt><dd>Down</dd>
+	<dt><kbd>k</kbd></dt><dd>Up</dd>
+	<dt><kbd>l</kbd></dt><dd>Right</dd>
+	<dt><kbd>i</kbd></dt><dd>In</dd>
+	<dt><kbd>o</kbd></dt><dd>Out</dd>
+      </dl>
+    </dd>
+  </dl>
 </div>
+
+
 <script type="text/javascript">
  // You might not need jquery . com
  function ready(fn) {
@@ -196,3 +186,12 @@ save_as: navigation-hierarchy.html
  };
 
 </script>
+
+<div id="info">
+  <h2>Description</h2>
+  <p>
+    This spike was built to investigate hierarchical navigation of diagrams by extending
+    the homerow navigation commands &mdash; <kbd>h</kbd>, <kbd>j</kbd>, <kbd>k</kbd> and <kbd>l</kbd> &mdash; with two extra commands:
+    <kbd>i</kbd> for moving inside an element and <kbd>o</kbd> for changing focus to the parent container.
+  </p>
+</div>

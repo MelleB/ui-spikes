@@ -11,6 +11,7 @@ PATH = 'content'
 TIMEZONE = 'Europe/Amsterdam'
 
 DEFAULT_LANG = 'en'
+TARGET = 'development'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -29,3 +30,6 @@ ARCHIVES_SAVE_AS = ''
 #RELATIVE_URLS = True
 
 THEME = 'theme/'
+
+PLUGIN_PATHS = ['./plugins']
+PLUGINS = ['pelican-jinja2content'] 
